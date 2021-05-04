@@ -27,6 +27,8 @@ class MoviesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
@@ -89,6 +91,13 @@ extension MoviesViewController: UITableViewDataSource {
 extension MoviesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
+        let Storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let destinationVC = Storyboard.instantiateViewController(identifier: "DetailsViewController") as! DetailsViewController
+        
+        destinationVC.getTitle = movies[indexPath.row].title
+        
+        self.navigationController?.pushViewController(destinationVC, animated: true)
     }
 }
+
 
