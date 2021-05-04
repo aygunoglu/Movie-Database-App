@@ -15,14 +15,11 @@ class SeriesViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        //navigationController?.isNavigationBarHidden = true
-        
+        super.viewWillAppear(animated)      
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //navigationController?.isNavigationBarHidden = false
     }
 
     override func viewDidLoad() {
@@ -60,7 +57,7 @@ class SeriesViewController: UIViewController {
                                     guard let finalResult = result else {
                                         return
                                     }
-                                    // Update our movies array
+                                    // Update our series array
                                     let newSeries = finalResult.results
                                     self.series.append(contentsOf: newSeries)
                                     
@@ -85,7 +82,6 @@ extension SeriesViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SeriesCell", for: indexPath) as! SeriesCell
         
         cell.configure(with: series[indexPath.row])
-        //cell.modify(with: movies[indexPath.row])
         return cell
     }
 }
