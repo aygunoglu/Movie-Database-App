@@ -98,6 +98,11 @@ extension SeriesViewController: UICollectionViewDelegate {
 
 extension SeriesViewController: UICollectionViewDelegateFlowLayout {
     
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let height = view.frame.size.height
+        let width = view.frame.size.width
+        return CGSize(width: width * 0.45, height: height * 0.40)
+        
+    }
     
 }
