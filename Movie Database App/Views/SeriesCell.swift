@@ -10,7 +10,8 @@ import UIKit
 class SeriesCell: UICollectionViewCell {
     @IBOutlet weak var seriesPoster: UIImageView!
     @IBOutlet weak var seriesTitle: UILabel!
-    @IBOutlet weak var seriesRating: UIView!
+    @IBOutlet weak var seriesRating: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +23,15 @@ class SeriesCell: UICollectionViewCell {
         
         seriesPoster.layer.cornerRadius = 15
 
+    }
+    
+    func configure(with model: Series) {
+        self.seriesTitle.text = model.name
+        self.seriesRating.text = String(model.rating)
+        
+        let url = URL(string: "https://image.tmdb.org/t/p/w500\(model.posterURL)")
+        seriesPoster.kf.setImage(with: url)
+        
     }
 
 }

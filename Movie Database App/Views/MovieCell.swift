@@ -30,7 +30,7 @@ class MovieCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func modify(with model: Movie) {
+    func configure(with model: Movie) {
         self.titleLabel.text = model.title
         self.releaseLabel.text = String(model.releaseDate.prefix(4))
         self.ratingLabel.text = String(model.rating)

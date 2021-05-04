@@ -21,26 +21,26 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tw3-cQ-ozI">
                         <rect key="frame" x="0.0" y="0.0" width="190" height="338"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KWX-j3-1gt">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="KWX-j3-1gt">
                                 <rect key="frame" x="8" y="273.5" width="174" height="54.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Falcon and The Winter Soldier" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ywW-6D-hH0">
-                                        <rect key="frame" x="0.0" y="0.0" width="170.5" height="24.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joker" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" id="ywW-6D-hH0">
+                                        <rect key="frame" x="0.0" y="0.0" width="48.5" height="21.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="j7Q-Yd-f8e">
-                                        <rect key="frame" x="0.0" y="34.5" width="55.5" height="20"/>
+                                        <rect key="frame" x="0.0" y="31.5" width="55.5" height="23"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v8W-zL-Agk">
-                                                <rect key="frame" x="0.0" y="-0.5" width="22" height="20"/>
+                                                <rect key="frame" x="0.0" y="-0.5" width="22" height="23"/>
                                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                                 <imageReference key="image" image="star.fill" catalog="system" symbolScale="medium"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEa-34-gBh">
-                                                <rect key="frame" x="26" y="0.0" width="29.5" height="20"/>
+                                                <rect key="frame" x="26" y="0.0" width="29.5" height="23"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -80,7 +80,7 @@
             <size key="customSize" width="272" height="458"/>
             <connections>
                 <outlet property="seriesPoster" destination="XrQ-Mq-bZg" id="9qw-yZ-iLj"/>
-                <outlet property="seriesRating" destination="tw3-cQ-ozI" id="7Ox-cI-V3D"/>
+                <outlet property="seriesRating" destination="WEa-34-gBh" id="q9V-Xe-VvJ"/>
                 <outlet property="seriesTitle" destination="ywW-6D-hH0" id="3tb-6i-Ase"/>
             </connections>
             <point key="canvasLocation" x="282.60869565217394" y="255.13392857142856"/>
