@@ -78,6 +78,11 @@
                 <constraint firstItem="tw3-cQ-ozI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lei-t1-qXA"/>
             </constraints>
             <size key="customSize" width="272" height="458"/>
+            <connections>
+                <outlet property="seriesPoster" destination="XrQ-Mq-bZg" id="9qw-yZ-iLj"/>
+                <outlet property="seriesRating" destination="tw3-cQ-ozI" id="7Ox-cI-V3D"/>
+                <outlet property="seriesTitle" destination="ywW-6D-hH0" id="3tb-6i-Ase"/>
+            </connections>
             <point key="canvasLocation" x="282.60869565217394" y="255.13392857142856"/>
         </collectionViewCell>
     </objects>

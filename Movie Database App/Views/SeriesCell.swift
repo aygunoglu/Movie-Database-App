@@ -8,7 +8,10 @@
 import UIKit
 
 class SeriesCell: UICollectionViewCell {
-
+    @IBOutlet weak var seriesPoster: UIImageView!
+    @IBOutlet weak var seriesTitle: UILabel!
+    @IBOutlet weak var seriesRating: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -17,6 +20,7 @@ class SeriesCell: UICollectionViewCell {
         self.layer.borderColor = UIColor.clear.cgColor
         self.layer.masksToBounds = true
         
+        seriesPoster.layer.cornerRadius = 15
 
     }
 
