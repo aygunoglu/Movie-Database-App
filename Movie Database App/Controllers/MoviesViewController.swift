@@ -27,7 +27,7 @@ class MoviesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        self.navigationController!.navigationBar.isTranslucent = true
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -92,9 +92,15 @@ extension MoviesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
         let Storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let destinationVC = Storyboard.instantiateViewController(identifier: "DetailsViewController") as! DetailsViewController
+        let destinationVC = Storyboard.instantiateViewController(identifier: "DetailsViewController2") as! DetailsViewController2
         
         destinationVC.getTitle = movies[indexPath.row].title
+        destinationVC.getOverview = movies[indexPath.row].overview
+        destinationVC.getThumb = movies[indexPath.row].posterURL
+        destinationVC.getRating = movies[indexPath.row].rating
+        destinationVC.getReleaseDate = movies[indexPath.row].releaseDate
+        destinationVC.getGenre = movies[indexPath.row].genreIDs
+        
         
         self.navigationController?.pushViewController(destinationVC, animated: true)
     }

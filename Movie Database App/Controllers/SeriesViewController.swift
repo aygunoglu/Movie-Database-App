@@ -22,7 +22,7 @@ class SeriesViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = false
+        //navigationController?.isNavigationBarHidden = false
     }
 
     override func viewDidLoad() {
@@ -93,6 +93,19 @@ extension SeriesViewController: UICollectionViewDataSource {
 extension SeriesViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath)
+        
+        let Storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let destinationVC = Storyboard.instantiateViewController(identifier: "DetailsViewController2") as! DetailsViewController2
+        
+        destinationVC.getTitle = series[indexPath.row].name
+        destinationVC.getOverview = series[indexPath.row].overview
+        destinationVC.getThumb = series[indexPath.row].posterURL
+        destinationVC.getRating = series[indexPath.row].rating
+        destinationVC.getReleaseDate = series[indexPath.row].releaseDate
+        destinationVC.getGenre = series[indexPath.row].genreIDs
+        
+        
+        self.navigationController?.pushViewController(destinationVC, animated: true)
     }
 }
 
