@@ -145,7 +145,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ1-o0-Vi1">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ1-o0-Vi1">
                                         <rect key="frame" x="10" y="613" width="394" height="1"/>
                                         <color key="backgroundColor" systemColor="placeholderTextColor"/>
                                         <constraints>
@@ -184,7 +184,6 @@
                                     <constraint firstItem="Ynv-B0-A1f" firstAttribute="top" secondItem="86x-Uy-iJG" secondAttribute="bottom" constant="8" id="rIt-om-ULC"/>
                                     <constraint firstItem="uDe-rq-JJq" firstAttribute="top" secondItem="86x-Uy-iJG" secondAttribute="bottom" constant="14" id="sk8-Jh-v9y"/>
                                     <constraint firstItem="iqe-so-ztk" firstAttribute="top" secondItem="ZQ1-o0-Vi1" secondAttribute="bottom" constant="20" id="ubs-7I-pbF"/>
-                                    <constraint firstItem="ZQ1-o0-Vi1" firstAttribute="centerX" secondItem="5aN-xr-Lx2" secondAttribute="centerX" id="v6t-jB-LX2"/>
                                     <constraint firstItem="iqe-so-ztk" firstAttribute="top" secondItem="Ynv-B0-A1f" secondAttribute="bottom" constant="45" id="wFJ-NX-MOs"/>
                                     <constraint firstItem="ZQ1-o0-Vi1" firstAttribute="top" secondItem="Ynv-B0-A1f" secondAttribute="bottom" constant="24" id="zcc-Po-RDk"/>
                                 </constraints>

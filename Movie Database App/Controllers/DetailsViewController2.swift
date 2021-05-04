@@ -26,11 +26,14 @@ class DetailsViewController2: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        //self.tabBarController?.tabBar.isHidden = true
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController!.navigationBar.shadowImage = UIImage()
+        self.navigationController!.navigationBar.isTranslucent = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        //self.tabBarController?.tabBar.isHidden = false
+        self.navigationController!.navigationBar.setBackgroundImage(nil, for: .default)
+        self.navigationController!.navigationBar.shadowImage = nil
     }
     
 
