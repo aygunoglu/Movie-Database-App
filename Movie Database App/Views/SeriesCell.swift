@@ -16,6 +16,8 @@ class SeriesCell: UICollectionViewCell {
         self.layer.borderWidth = 5.0
         self.layer.borderColor = UIColor.clear.cgColor
         self.layer.masksToBounds = true
+        
+
     }
 
 }

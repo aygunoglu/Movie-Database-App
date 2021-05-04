@@ -3,29 +3,92 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SeriesCell" id="gTV-IL-0wX" customClass="SeriesCell" customModule="Movie_Database_App" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="272" height="443"/>
+            <rect key="frame" x="0.0" y="0.0" width="190" height="338"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="272" height="443"/>
+                <rect key="frame" x="0.0" y="0.0" width="190" height="338"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tw3-cQ-ozI">
+                        <rect key="frame" x="0.0" y="0.0" width="190" height="338"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KWX-j3-1gt">
+                                <rect key="frame" x="8" y="273.5" width="174" height="54.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Falcon and The Winter Soldier" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ywW-6D-hH0">
+                                        <rect key="frame" x="0.0" y="0.0" width="170.5" height="24.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="j7Q-Yd-f8e">
+                                        <rect key="frame" x="0.0" y="34.5" width="55.5" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v8W-zL-Agk">
+                                                <rect key="frame" x="0.0" y="-0.5" width="22" height="20"/>
+                                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                                <imageReference key="image" image="star.fill" catalog="system" symbolScale="medium"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEa-34-gBh">
+                                                <rect key="frame" x="26" y="0.0" width="29.5" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c2bae53738c6805da1d994fa477cdb89.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XrQ-Mq-bZg">
+                                <rect key="frame" x="0.0" y="0.0" width="190" height="266"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="3kJ-dv-9fB"/>
+                                    <constraint firstAttribute="height" constant="266" id="lhD-3n-tkF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XrQ-Mq-bZg" firstAttribute="top" secondItem="tw3-cQ-ozI" secondAttribute="top" id="6hO-Ap-NrC"/>
+                            <constraint firstItem="KWX-j3-1gt" firstAttribute="leading" secondItem="tw3-cQ-ozI" secondAttribute="leading" constant="8" id="EUN-vG-9qD"/>
+                            <constraint firstAttribute="trailing" secondItem="KWX-j3-1gt" secondAttribute="trailing" constant="8" id="Of8-az-WZa"/>
+                            <constraint firstItem="KWX-j3-1gt" firstAttribute="top" secondItem="XrQ-Mq-bZg" secondAttribute="bottom" constant="7.5" id="X9i-e8-szk"/>
+                            <constraint firstAttribute="trailing" secondItem="XrQ-Mq-bZg" secondAttribute="trailing" id="ctN-ms-8NC"/>
+                            <constraint firstAttribute="bottom" secondItem="KWX-j3-1gt" secondAttribute="bottom" constant="10" id="jqL-mr-TS7"/>
+                            <constraint firstItem="XrQ-Mq-bZg" firstAttribute="leading" secondItem="tw3-cQ-ozI" secondAttribute="leading" id="sKS-eg-Z4I"/>
+                        </constraints>
+                    </view>
+                </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <color key="backgroundColor" name="AccentColor"/>
-            <size key="customSize" width="272" height="445"/>
-            <point key="canvasLocation" x="296" y="253"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tw3-cQ-ozI" secondAttribute="trailing" id="MQS-yr-ixF"/>
+                <constraint firstItem="tw3-cQ-ozI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Way-0B-Kmj"/>
+                <constraint firstAttribute="bottom" secondItem="tw3-cQ-ozI" secondAttribute="bottom" id="aCs-Oq-hgn"/>
+                <constraint firstItem="tw3-cQ-ozI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lei-t1-qXA"/>
+            </constraints>
+            <size key="customSize" width="272" height="458"/>
+            <point key="canvasLocation" x="282.60869565217394" y="255.13392857142856"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <image name="c2bae53738c6805da1d994fa477cdb89.jpg" width="1012" height="1500"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

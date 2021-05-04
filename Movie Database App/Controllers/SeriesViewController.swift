@@ -9,12 +9,13 @@ import UIKit
 
 class SeriesViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         //navigationController?.isNavigationBarHidden = true
-        //navigationController?.navigationBar.backgroundImage(for: <#T##UIBarMetrics#>)
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -29,6 +30,10 @@ class SeriesViewController: UIViewController {
         collectionView.dataSource = self
         
         collectionView.register(UINib(nibName: "SeriesCell", bundle: nil), forCellWithReuseIdentifier: "SeriesCell")
+    }
+    
+    override func viewDidLayoutSubviews() {
+        
     }
 
 
@@ -50,4 +55,10 @@ extension SeriesViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath)
     }
+}
+
+extension SeriesViewController: UICollectionViewDelegateFlowLayout {
+    
+    
+    
 }
