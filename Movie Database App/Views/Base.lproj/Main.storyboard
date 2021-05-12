@@ -145,7 +145,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ1-o0-Vi1">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ1-o0-Vi1">
                                         <rect key="frame" x="10" y="613" width="394" height="1"/>
                                         <color key="backgroundColor" systemColor="placeholderTextColor"/>
                                         <constraints>
@@ -174,16 +174,17 @@
                                     <constraint firstItem="T5v-fe-w2H" firstAttribute="trailing" secondItem="iqe-so-ztk" secondAttribute="trailing" constant="8" id="9Ac-vQ-EmD"/>
                                     <constraint firstItem="86x-Uy-iJG" firstAttribute="leading" secondItem="T5v-fe-w2H" secondAttribute="leading" constant="8" id="AGO-sD-Bd9"/>
                                     <constraint firstItem="uDe-rq-JJq" firstAttribute="leading" secondItem="T5v-fe-w2H" secondAttribute="leading" constant="8" id="Ata-Sb-YG6"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZQ1-o0-Vi1" secondAttribute="trailing" constant="10" id="EIg-tF-G97"/>
+                                    <constraint firstItem="T5v-fe-w2H" firstAttribute="trailing" secondItem="ZQ1-o0-Vi1" secondAttribute="trailing" constant="10" id="EIg-tF-G97"/>
                                     <constraint firstItem="WBA-YZ-kvU" firstAttribute="leading" secondItem="T5v-fe-w2H" secondAttribute="leading" id="JIz-y5-WuC"/>
                                     <constraint firstItem="WBA-YZ-kvU" firstAttribute="trailing" secondItem="T5v-fe-w2H" secondAttribute="trailing" id="PEQ-nn-oAO"/>
                                     <constraint firstItem="WBA-YZ-kvU" firstAttribute="top" secondItem="T5v-fe-w2H" secondAttribute="top" id="QWc-to-yTI"/>
                                     <constraint firstItem="Ynv-B0-A1f" firstAttribute="leading" secondItem="uDe-rq-JJq" secondAttribute="trailing" constant="10" id="W4W-mk-9hL"/>
-                                    <constraint firstItem="ZQ1-o0-Vi1" firstAttribute="leading" secondItem="5aN-xr-Lx2" secondAttribute="leading" constant="10" id="jg6-MM-AZ7"/>
+                                    <constraint firstItem="ZQ1-o0-Vi1" firstAttribute="leading" secondItem="T5v-fe-w2H" secondAttribute="leading" constant="10" id="jg6-MM-AZ7"/>
                                     <constraint firstItem="T5v-fe-w2H" firstAttribute="trailing" secondItem="86x-Uy-iJG" secondAttribute="trailing" constant="8" id="qpB-3M-DJj"/>
                                     <constraint firstItem="Ynv-B0-A1f" firstAttribute="top" secondItem="86x-Uy-iJG" secondAttribute="bottom" constant="8" id="rIt-om-ULC"/>
                                     <constraint firstItem="uDe-rq-JJq" firstAttribute="top" secondItem="86x-Uy-iJG" secondAttribute="bottom" constant="14" id="sk8-Jh-v9y"/>
                                     <constraint firstItem="iqe-so-ztk" firstAttribute="top" secondItem="ZQ1-o0-Vi1" secondAttribute="bottom" constant="20" id="ubs-7I-pbF"/>
+                                    <constraint firstItem="ZQ1-o0-Vi1" firstAttribute="centerX" secondItem="T5v-fe-w2H" secondAttribute="centerX" id="v6t-jB-LX2"/>
                                     <constraint firstItem="iqe-so-ztk" firstAttribute="top" secondItem="Ynv-B0-A1f" secondAttribute="bottom" constant="45" id="wFJ-NX-MOs"/>
                                     <constraint firstItem="ZQ1-o0-Vi1" firstAttribute="top" secondItem="Ynv-B0-A1f" secondAttribute="bottom" constant="24" id="zcc-Po-RDk"/>
                                 </constraints>
@@ -216,6 +217,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ayz-VL-NUn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-886.95652173913049" y="1813.3928571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CLL-yp-Tru">
+            <objects>
+                <navigationController id="4ax-ia-gjj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F25-Hn-z7Y">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wwi-hj-NPp" kind="relationship" relationship="rootViewController" id="QaZ-uZ-fkU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UTI-Cm-msC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2049" y="2502"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dXE-rR-JMP">
+            <objects>
+                <viewController id="wwi-hj-NPp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Tu-Yd-z9H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YZ9-Tt-tsl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3VT-Ak-p8D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BFz-1v-shV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-888.40579710144937" y="2501.7857142857142"/>
         </scene>
         <!--TV Series-->
         <scene sceneID="vhF-IO-Xv2">
