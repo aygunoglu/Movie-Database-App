@@ -16,6 +16,7 @@ class DetailsViewController2: UIViewController {
     var getThumb = String()
     var getRating = Float()
     
+    @IBOutlet weak var detailsTableView: UITableView!
     @IBOutlet weak var detailsThumb: UIImageView!
     @IBOutlet weak var detailsTitle: UILabel!
     @IBOutlet weak var detailsGenre: UILabel!
@@ -44,29 +45,40 @@ class DetailsViewController2: UIViewController {
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationController!.navigationBar.isTranslucent = true
         
+        let header = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height / 2))
         
-        ratingView.layer.cornerRadius = 12
-
-        detailsTitle.text = getTitle
-        ratingLabel.text = String(getRating)
-        overview.text = getOverview
-        detailsReleaseDate.text = String(getReleaseDate.prefix(4))
-
-        let url = URL(string: "https://image.tmdb.org/t/p/w500\(getThumb)")
-        detailsThumb.kf.setImage(with: url)
-
-        var count = 0
-        var genreList: [String] = []
-
-        for id in getGenre {
-            genreList.append(movieGenres[id]!)
-            count += 1
-            if count == 2 {
-                break
-            }
-        }
-
-        self.detailsGenre.text! = genreList.joined(separator: ", ")
+        let imageView = UIImageView(image: UIImage(named: "Thumbnail"))
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        header.addSubview(imageView)
+        imageView.frame = CGRect(x: 0, y: 0, width: header.frame.size.width, height: header.frame.size.height)
+        
+        detailsTableView.tableHeaderView = header
+        
+        
+        
+//        ratingView.layer.cornerRadius = 12
+//
+//        detailsTitle.text = getTitle
+//        ratingLabel.text = String(getRating)
+//        overview.text = getOverview
+//        detailsReleaseDate.text = String(getReleaseDate.prefix(4))
+//
+//        let url = URL(string: "https://image.tmdb.org/t/p/w500\(getThumb)")
+//        detailsThumb.kf.setImage(with: url)
+//
+//        var count = 0
+//        var genreList: [String] = []
+//
+//        for id in getGenre {
+//            genreList.append(movieGenres[id]!)
+//            count += 1
+//            if count == 2 {
+//                break
+//            }
+//        }
+//
+//        self.detailsGenre.text! = genreList.joined(separator: ", ")
         
         // Do any additional setup after loading the view.
     }
