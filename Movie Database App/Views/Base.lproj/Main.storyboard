@@ -83,8 +83,20 @@
                     <view key="view" contentMode="scaleToFill" id="NyU-Ag-5np">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JUN-He-wA6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="haZ-Wf-7AO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JUN-He-wA6" firstAttribute="trailing" secondItem="haZ-Wf-7AO" secondAttribute="trailing" id="2Gm-yt-kNH"/>
+                            <constraint firstItem="JUN-He-wA6" firstAttribute="leading" secondItem="haZ-Wf-7AO" secondAttribute="leading" id="XhX-6S-cbh"/>
+                            <constraint firstAttribute="bottom" secondItem="JUN-He-wA6" secondAttribute="bottom" id="e0P-Qj-Mfc"/>
+                            <constraint firstItem="JUN-He-wA6" firstAttribute="top" secondItem="NyU-Ag-5np" secondAttribute="top" id="xMY-gG-LBf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Hf-Bv-Ona"/>
                 </viewController>
