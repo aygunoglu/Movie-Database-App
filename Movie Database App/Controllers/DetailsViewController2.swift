@@ -65,15 +65,14 @@ class DetailsViewController2: UIViewController {
 extension DetailsViewController2: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = UIView(frame: CGRect(x: 0.0, y: 0.0, width: view.frame.size.width, height: 50.0))
-
+        let descriptionHeader = UIView(frame: CGRect(x: 0.0, y: 0.0, width: view.frame.size.width, height: 50.0))
         let titleLabel = UILabel(frame: CGRect(x: 10.0, y: 0.0, width: view.frame.size.width, height: 50.0))
         
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 24.0)
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 25.0)
         titleLabel.text = "Description"
-        header.addSubview(titleLabel)
+        descriptionHeader.addSubview(titleLabel)
         if section == 1 {
-            return header
+            return descriptionHeader
         }else{
             return nil
         }
