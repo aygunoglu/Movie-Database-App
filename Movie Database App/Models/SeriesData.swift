@@ -16,7 +16,7 @@ struct Series: Codable {
     let id: Int
     let overview: String
     let releaseDate: String
-    let name: String
+    let title: String
     let rating: Float
     let posterURL: String
     
@@ -24,7 +24,7 @@ struct Series: Codable {
         case genreIDs = "genre_ids"
         case id
         case overview
-        case name
+        case title = "name"
         case releaseDate = "first_air_date"
         case rating = "vote_average"
         case posterURL = "poster_path"

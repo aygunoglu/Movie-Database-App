@@ -6,25 +6,14 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetailsViewController2: UIViewController {
     
-    var getTitle = String()
-    var getReleaseDate = String()
-    var getOverview = String()
-    var getGenre = [Int]()
-    var getThumb = String()
-    var getRating = Float()
+    var getMovie = Movie(genreIDs: [Int](), id: Int(), overview: String(), releaseDate: String(), title: String(), rating: Float(), posterURL: String(), backdropURL: String())
+    var getSeries = Series(genreIDs: [Int](), id: Int(), overview: String(), releaseDate: String(), title: String(), rating: Float(), posterURL: String())
     
     @IBOutlet weak var detailsTableView: UITableView!
-    @IBOutlet weak var detailsThumb: UIImageView!
-    @IBOutlet weak var detailsTitle: UILabel!
-    @IBOutlet weak var detailsGenre: UILabel!
-    @IBOutlet weak var ratingView: UIView!
-    @IBOutlet weak var detailsReleaseDate: UILabel!
-    @IBOutlet weak var overview: UILabel!
-    @IBOutlet weak var ratingLabel: UILabel!
-    
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -45,9 +34,10 @@ class DetailsViewController2: UIViewController {
         self.navigationController!.navigationBar.isTranslucent = true
         
         
-        
         let header = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height / 2))
-        let imageView = UIImageView(image: UIImage(named: "Thumbnail"))
+        let imageView = UIImageView()
+        let url = URL(string: "https://image.tmdb.org/t/p/original\(getMovie.backdropURL)")
+        imageView.kf.setImage(with: url)
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         header.addSubview(imageView)
@@ -119,13 +109,14 @@ extension DetailsViewController2: UITableViewDataSource, UITableViewDelegate {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let detailsCell = tableView.dequeueReusableCell(withIdentifier: "DetailsCell", for: indexPath) as! DetailsCell
         let descriptionCell = tableView.dequeueReusableCell(withIdentifier: "DescriptionCell", for: indexPath) as! DescriptionCell
         if indexPath.section == 0 {
+            detailsCell.configure(with: getMovie)
             return detailsCell
         }else {
             return descriptionCell

@@ -93,6 +93,13 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <accessibility key="accessibilityConfiguration" identifier="DetailsCell"/>
+            <connections>
+                <outlet property="genreLabel" destination="Gdf-bZ-Ywd" id="3Xn-3E-UQE"/>
+                <outlet property="ratingLabel" destination="1yn-eU-d1z" id="Arh-ic-1Pi"/>
+                <outlet property="ratingView" destination="VWn-ZU-fAN" id="8Kj-Qc-6rU"/>
+                <outlet property="releaseLabel" destination="428-pw-8TE" id="Veo-z4-DPJ"/>
+                <outlet property="titleLabel" destination="nx2-1R-IY4" id="Ter-hd-ATZ"/>
+            </connections>
             <point key="canvasLocation" x="183.33333333333334" y="88.727678571428569"/>
         </tableViewCell>
     </objects>
