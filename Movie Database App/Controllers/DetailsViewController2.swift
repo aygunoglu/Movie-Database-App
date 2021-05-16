@@ -38,7 +38,17 @@ class DetailsViewController2: UIViewController {
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationController!.navigationBar.isTranslucent = true
         
+        setGlobalHeader()
+
         
+        detailsTableView.dataSource = self
+        detailsTableView.delegate = self
+        detailsTableView.register(UINib(nibName: "DetailsCell", bundle: nil), forCellReuseIdentifier: "DetailsCell")
+        detailsTableView.register(UINib(nibName: "DescriptionCell", bundle: nil), forCellReuseIdentifier: "DescriptionCell")
+        
+    }
+    
+    func setGlobalHeader() {
         let header = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height / 2))
         let imageView = UIImageView()
         let url = URL(string: "https://image.tmdb.org/t/p/original\(getThumb)")
@@ -48,12 +58,6 @@ class DetailsViewController2: UIViewController {
         header.addSubview(imageView)
         imageView.frame = CGRect(x: 0, y: 0, width: header.frame.size.width, height: header.frame.size.height)
         detailsTableView.tableHeaderView = header
-        
-        detailsTableView.dataSource = self
-        detailsTableView.delegate = self
-        detailsTableView.register(UINib(nibName: "DetailsCell", bundle: nil), forCellReuseIdentifier: "DetailsCell")
-        detailsTableView.register(UINib(nibName: "DescriptionCell", bundle: nil), forCellReuseIdentifier: "DescriptionCell")
-        
     }
     
 }
