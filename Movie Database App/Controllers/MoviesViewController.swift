@@ -85,7 +85,6 @@ extension MoviesViewController: UITableViewDataSource {
         return cell
     }
     
-    
 }
 
 extension MoviesViewController: UITableViewDelegate {

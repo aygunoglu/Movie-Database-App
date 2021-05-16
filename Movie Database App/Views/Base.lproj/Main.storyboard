@@ -87,7 +87,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aN-xr-Lx2">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="c2bae53738c6805da1d994fa477cdb89.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WBA-YZ-kvU">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="thumbnail.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WBA-YZ-kvU">
                                         <rect key="frame" x="0.0" y="-88" width="414" height="600"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Crime, Drama, Thriller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDe-rq-JJq">
@@ -218,38 +218,6 @@
             </objects>
             <point key="canvasLocation" x="-886.95652173913049" y="1813.3928571428571"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="CLL-yp-Tru">
-            <objects>
-                <navigationController id="4ax-ia-gjj" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F25-Hn-z7Y">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="wwi-hj-NPp" kind="relationship" relationship="rootViewController" id="QaZ-uZ-fkU"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UTI-Cm-msC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2049" y="2502"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="dXE-rR-JMP">
-            <objects>
-                <viewController id="wwi-hj-NPp" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5Tu-Yd-z9H">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="YZ9-Tt-tsl"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="3VT-Ak-p8D"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BFz-1v-shV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-888.40579710144937" y="2501.7857142857142"/>
-        </scene>
         <!--TV Series-->
         <scene sceneID="vhF-IO-Xv2">
             <objects>
@@ -326,10 +294,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="c2bae53738c6805da1d994fa477cdb89.jpg" width="1012" height="1500"/>
         <image name="film" catalog="system" width="128" height="93"/>
         <image name="play.tv" catalog="system" width="128" height="97"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="thumbnail.jpg" width="1012" height="1500"/>
         <systemColor name="placeholderTextColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

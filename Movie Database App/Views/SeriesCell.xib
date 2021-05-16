@@ -21,7 +21,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tw3-cQ-ozI">
                         <rect key="frame" x="0.0" y="0.0" width="190" height="338"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="c2bae53738c6805da1d994fa477cdb89.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XrQ-Mq-bZg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="XrQ-Mq-bZg">
                                 <rect key="frame" x="0.0" y="0.0" width="190" height="266.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGg-rR-ozL">
@@ -79,7 +79,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="c2bae53738c6805da1d994fa477cdb89.jpg" width="1012" height="1500"/>
+        <image name="Thumbnail" width="1012" height="1500"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -24,7 +24,6 @@
 		BFD52BB2263CA26300376DC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD52BB0263CA26300376DC5 /* LaunchScreen.storyboard */; };
 		BFDDF976263DB35600C5603E /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDDF974263DB35600C5603E /* MovieCell.swift */; };
 		BFDDF977263DB35600C5603E /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFDDF975263DB35600C5603E /* MovieCell.xib */; };
-		BFF778C9263DDD3C005D9472 /* c2bae53738c6805da1d994fa477cdb89.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF778C8263DDD3C005D9472 /* c2bae53738c6805da1d994fa477cdb89.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +47,6 @@
 		BFD52BB3263CA26300376DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFDDF974263DB35600C5603E /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		BFDDF975263DB35600C5603E /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
-		BFF778C8263DDD3C005D9472 /* c2bae53738c6805da1d994fa477cdb89.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c2bae53738c6805da1d994fa477cdb89.jpg; sourceTree = "<group>"; };
 		CC51F72E8F5268D685A915D6 /* Pods_Movie_Database_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movie_Database_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,7 +111,6 @@
 				BFD52BA3263CA26100376DC5 /* Products */,
 				456DB07B91047B9139E78329 /* Pods */,
 				C0FC8604E53DAD2C17FD968E /* Frameworks */,
-				BFF778C8263DDD3C005D9472 /* c2bae53738c6805da1d994fa477cdb89.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,7 +209,6 @@
 				BFD52BAF263CA26300376DC5 /* Assets.xcassets in Resources */,
 				BFDDF977263DB35600C5603E /* MovieCell.xib in Resources */,
 				BF7041C226400E07008E0F0B /* SeriesCell.xib in Resources */,
-				BFF778C9263DDD3C005D9472 /* c2bae53738c6805da1d994fa477cdb89.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
