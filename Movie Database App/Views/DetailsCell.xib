@@ -24,13 +24,13 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crime, Drama, Thriller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdf-bZ-Ywd">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Crime, Drama, Thriller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdf-bZ-Ywd">
                         <rect key="frame" x="10" y="44" width="150" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWn-ZU-fAN">
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VWn-ZU-fAN">
                         <rect key="frame" x="249" y="39" width="75.5" height="32"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dtF-r7-LEn">
@@ -60,7 +60,7 @@
                             <constraint firstItem="dtF-r7-LEn" firstAttribute="top" secondItem="VWn-ZU-fAN" secondAttribute="top" constant="6" id="wEs-zk-WYF"/>
                         </constraints>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqk-4A-ztc">
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aqk-4A-ztc">
                         <rect key="frame" x="336" y="39" width="1" height="32"/>
                         <color key="backgroundColor" systemColor="placeholderTextColor"/>
                         <constraints>
@@ -68,7 +68,7 @@
                             <constraint firstAttribute="height" constant="32" id="qvu-fa-2JI"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="428-pw-8TE">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="428-pw-8TE">
                         <rect key="frame" x="347" y="46" width="34" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
@@ -78,6 +78,7 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="nx2-1R-IY4" secondAttribute="trailing" constant="10" id="0Ya-0P-wM9"/>
                     <constraint firstItem="Gdf-bZ-Ywd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="9eG-sY-fpU"/>
+                    <constraint firstItem="VWn-ZU-fAN" firstAttribute="leading" secondItem="Gdf-bZ-Ywd" secondAttribute="trailing" constant="10" id="MHv-5t-j6B"/>
                     <constraint firstAttribute="bottom" secondItem="aqk-4A-ztc" secondAttribute="bottom" constant="10" id="PAw-zh-Chn"/>
                     <constraint firstItem="VWn-ZU-fAN" firstAttribute="top" secondItem="nx2-1R-IY4" secondAttribute="bottom" constant="4.5" id="QXa-rZ-8R5"/>
                     <constraint firstAttribute="bottom" secondItem="428-pw-8TE" secondAttribute="bottom" constant="17" id="RR9-dj-7DG"/>

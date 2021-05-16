@@ -26,16 +26,13 @@ class DetailsCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configure(with model: Movie) {
-        self.titleLabel.text = model.title
-        self.releaseLabel.text = String(model.releaseDate.prefix(4))
-        self.ratingLabel.text = String(model.rating)
+    func configureGenre(with model: [Int]) {
         self.genreLabel.text = ""
         
         var count = 0
         var genreList: [String] = []
         
-        for id in model.genreIDs {
+        for id in model {
             genreList.append(movieGenres[id]!)
             count += 1
             if count == 3 {

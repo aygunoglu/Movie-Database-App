@@ -34,6 +34,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <accessibility key="accessibilityConfiguration" identifier="DescriptionCell"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="K9X-V3-BzL" id="BXt-q6-NhL"/>
+            </connections>
             <point key="canvasLocation" x="132" y="80"/>
         </tableViewCell>
     </objects>

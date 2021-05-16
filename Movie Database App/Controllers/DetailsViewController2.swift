@@ -10,8 +10,13 @@ import Kingfisher
 
 class DetailsViewController2: UIViewController {
     
-    var getMovie = Movie(genreIDs: [Int](), id: Int(), overview: String(), releaseDate: String(), title: String(), rating: Float(), posterURL: String(), backdropURL: String())
-    var getSeries = Series(genreIDs: [Int](), id: Int(), overview: String(), releaseDate: String(), title: String(), rating: Float(), posterURL: String())
+    var getTitle = String()
+    var getReleaseDate = String()
+    var getOverview = String()
+    var getGenre = [Int]()
+    var getThumb = String()
+    var getRating = Float()
+
     
     @IBOutlet weak var detailsTableView: UITableView!
     
@@ -36,7 +41,7 @@ class DetailsViewController2: UIViewController {
         
         let header = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height / 2))
         let imageView = UIImageView()
-        let url = URL(string: "https://image.tmdb.org/t/p/original\(getMovie.backdropURL)")
+        let url = URL(string: "https://image.tmdb.org/t/p/original\(getThumb)")
         imageView.kf.setImage(with: url)
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
@@ -49,30 +54,6 @@ class DetailsViewController2: UIViewController {
         detailsTableView.register(UINib(nibName: "DetailsCell", bundle: nil), forCellReuseIdentifier: "DetailsCell")
         detailsTableView.register(UINib(nibName: "DescriptionCell", bundle: nil), forCellReuseIdentifier: "DescriptionCell")
         
-//        ratingView.layer.cornerRadius = 12
-//
-//        detailsTitle.text = getTitle
-//        ratingLabel.text = String(getRating)
-//        overview.text = getOverview
-//        detailsReleaseDate.text = String(getReleaseDate.prefix(4))
-//
-//        let url = URL(string: "https://image.tmdb.org/t/p/w500\(getThumb)")
-//        detailsThumb.kf.setImage(with: url)
-//
-//        var count = 0
-//        var genreList: [String] = []
-//
-//        for id in getGenre {
-//            genreList.append(movieGenres[id]!)
-//            count += 1
-//            if count == 2 {
-//                break
-//            }
-//        }
-//
-//        self.detailsGenre.text! = genreList.joined(separator: ", ")
-        
-        // Do any additional setup after loading the view.
     }
     
 }
@@ -116,9 +97,13 @@ extension DetailsViewController2: UITableViewDataSource, UITableViewDelegate {
         let detailsCell = tableView.dequeueReusableCell(withIdentifier: "DetailsCell", for: indexPath) as! DetailsCell
         let descriptionCell = tableView.dequeueReusableCell(withIdentifier: "DescriptionCell", for: indexPath) as! DescriptionCell
         if indexPath.section == 0 {
-            detailsCell.configure(with: getMovie)
+            detailsCell.titleLabel.text = getTitle
+            detailsCell.releaseLabel.text = String(getReleaseDate.prefix(4))
+            detailsCell.ratingLabel.text = String(getRating)
+            detailsCell.configureGenre(with: getGenre)
             return detailsCell
         }else {
+            descriptionCell.descriptionLabel.text = getOverview
             return descriptionCell
         }
     }
