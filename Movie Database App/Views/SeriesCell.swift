@@ -26,7 +26,7 @@ class SeriesCell: UICollectionViewCell {
     }
     
     func configure(with model: Series) {
-        self.seriesTitle.text = model.name
+        self.seriesTitle.text = model.title
         self.seriesRating.text = String(model.rating)
         
         let url = URL(string: "https://image.tmdb.org/t/p/w500\(model.posterURL)")

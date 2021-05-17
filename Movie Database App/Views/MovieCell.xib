@@ -21,7 +21,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vaD-pj-S77">
                         <rect key="frame" x="10" y="10" width="394" height="180"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c2bae53738c6805da1d994fa477cdb89.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5Af-zT-dvr" userLabel="Thumbnail Image">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="5Af-zT-dvr" userLabel="Thumbnail Image">
                                 <rect key="frame" x="0.0" y="0.0" width="122" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="122" id="3gR-V8-0ew"/>
@@ -112,7 +112,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="c2bae53738c6805da1d994fa477cdb89.jpg" width="1012" height="1500"/>
+        <image name="Thumbnail" width="1012" height="1500"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

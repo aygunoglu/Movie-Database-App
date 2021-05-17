@@ -85,7 +85,6 @@ extension MoviesViewController: UITableViewDataSource {
         return cell
     }
     
-    
 }
 
 extension MoviesViewController: UITableViewDelegate {
@@ -94,9 +93,10 @@ extension MoviesViewController: UITableViewDelegate {
         let Storyboard = UIStoryboard(name: "Main", bundle: nil)
         let destinationVC = Storyboard.instantiateViewController(identifier: "DetailsViewController2") as! DetailsViewController2
         
+        
         destinationVC.getTitle = movies[indexPath.row].title
         destinationVC.getOverview = movies[indexPath.row].overview
-        destinationVC.getThumb = movies[indexPath.row].posterURL
+        destinationVC.getThumb = movies[indexPath.row].backdropURL
         destinationVC.getRating = movies[indexPath.row].rating
         destinationVC.getReleaseDate = movies[indexPath.row].releaseDate
         destinationVC.getGenre = movies[indexPath.row].genreIDs

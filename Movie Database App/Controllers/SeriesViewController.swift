@@ -93,13 +93,12 @@ extension SeriesViewController: UICollectionViewDelegate {
         let Storyboard = UIStoryboard(name: "Main", bundle: nil)
         let destinationVC = Storyboard.instantiateViewController(identifier: "DetailsViewController2") as! DetailsViewController2
         
-        destinationVC.getTitle = series[indexPath.row].name
+        destinationVC.getTitle = series[indexPath.row].title
         destinationVC.getOverview = series[indexPath.row].overview
-        destinationVC.getThumb = series[indexPath.row].posterURL
+        destinationVC.getThumb = series[indexPath.row].backdropURL
         destinationVC.getRating = series[indexPath.row].rating
         destinationVC.getReleaseDate = series[indexPath.row].releaseDate
         destinationVC.getGenre = series[indexPath.row].genreIDs
-        
         
         self.navigationController?.pushViewController(destinationVC, animated: true)
     }
