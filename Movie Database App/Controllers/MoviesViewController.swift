@@ -37,6 +37,7 @@ class MoviesViewController: UIViewController {
         fetchData()
         
 
+
     }
     
     func fetchData() {
