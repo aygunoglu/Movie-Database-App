@@ -14,6 +14,7 @@ Displays currently most popular movies and tv shows by pulling data from the The
 
 * Fetches data from The Movie Database API to display movie/show details.
 * MVC (Model-View-Controller) design pattern.
+* Dark mode support.
 * Asynchronous network calls.
 * Uses Autolayout to layout views.
 * Uses only Table Views and Collection Views on every page.
