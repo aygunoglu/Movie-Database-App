@@ -2,12 +2,14 @@
 
 Displays currently most popular movies and tv shows by pulling data from the The Movie Database API.
 
+
+
 ## Screenshots
 
 <p>
-  <img width="250px" src="https://im2.ezgif.com/tmp/ezgif-2-6734e086dc3b.gif">
-  <img width="250px" src="https://im6.ezgif.com/tmp/ezgif-6-20fe338db0c3.gif">
-  <img width="250px" src="https://im2.ezgif.com/tmp/ezgif-2-a0230a045d01.gif">
+  ![3](https://user-images.githubusercontent.com/81817904/119112898-3c20a880-ba2d-11eb-83b9-223090fb15aa.gif)
+  ![1](https://user-images.githubusercontent.com/81817904/119112910-3d51d580-ba2d-11eb-8479-875ceefb35ab.gif)
+  ![2](https://user-images.githubusercontent.com/81817904/119112918-3f1b9900-ba2d-11eb-89ed-facd0961c4ba.gif)
 </p>
 
 ## Features
